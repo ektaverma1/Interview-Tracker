@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  candidate_name: MyString
+  total_exp: 9.99
+  inteviewer_name: MyString
+  interview_date: 2013-07-31 01:50:31
+  interview_status: MyString
+
+two:
+  candidate_name: MyString
+  total_exp: 9.99
+  inteviewer_name: MyString
+  interview_date: 2013-07-31 01:50:31
+  interview_status: MyString

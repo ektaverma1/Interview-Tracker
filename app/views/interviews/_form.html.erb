@@ -1,0 +1,46 @@
+<script type="text/javascript">
+    $('#date').datepicker({
+    format: 'dd-mm-yyyy'
+    });
+</script>
+
+<%= form_for @interview, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :candidate_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :candidate_name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :total_exp, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :total_exp, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :inteviewer_name, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :inteviewer_name, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :interview_date, :class => 'control-label' %>
+    <div class="controls">
+      <div class='datepicker'>
+      <%= f.text_field :interview_date, :class => 'text_field',:type=>'text',:id=>'date' %>
+      </div>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :interview_status, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :interview_status, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                interviews_path, :class => 'btn' %>
+  </div>
+<% end %>
