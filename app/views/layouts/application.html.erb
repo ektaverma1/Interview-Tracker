@@ -25,8 +25,7 @@
           <li><%= link_to "Interview List",interviews_path%></li>
           <li><%= link_to "Profiles" %></li>
           <li><%= link_to "Interviewer" %></li>
-          <li><%= link_to "Contact" %></li>
-        </ul>
+          <li><%= link_to 'Sign out', destroy_user_session_path , :method => :delete %></li>
       </div>
     </div>
   </div>

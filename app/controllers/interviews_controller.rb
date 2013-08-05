@@ -4,7 +4,8 @@ class InterviewsController < ApplicationController
   # GET /interviews
   # GET /interviews.json
   def index
-    @interviews = Interview.all
+    @interviews = Interview.search(params[:search])
+    #@interviews = Interview.all
   end
 
   # GET /interviews/1
