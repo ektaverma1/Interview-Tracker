@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 
 gem 'mysql'
 
+gem 'devise'
+
 gem 'twitter-bootstrap-rails'
 
 gem 'rspec-rails', '~> 2.0',:group => [:test, :development]
